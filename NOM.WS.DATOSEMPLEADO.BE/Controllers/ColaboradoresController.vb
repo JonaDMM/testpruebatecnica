@@ -16,7 +16,7 @@ Namespace Controllers
                 Dim dtColaboradores As DataTable = conexion.ObtenerDatos("COLABORADOR")
 
                 Dim strJson As String = JsonConvert.SerializeObject(dtColaboradores, Formatting.Indented)
-                Return Ok(Newtonsoft.Json.Linq.JArray.Parse("[{""IDCOLABORADOR"":1,""NOMBRE"":""Jose"",""APELLIDO"":""Pérez"",""DIRECCION"":""San Jose Pinula"",""EDAD"":""25"",""PROFESION"":""carpintero"",""ESTADOCIVIL"":""Soltero""}]"))
+                Return Ok(Newtonsoft.Json.Linq.JArray.Parse(strJson))
             Catch ex As Exception
                 Dim errorResponse As New Dictionary(Of String, Object) From {
                     {"Error", True},

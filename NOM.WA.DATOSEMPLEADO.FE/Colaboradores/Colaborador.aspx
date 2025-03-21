@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>Lista de Colaboradores</h2>
+        <h2>Lista de Colaboradores</h2> 
         <button id="btnCargar">Cargar Colaboradores</button>
         <table id="tablaColaboradores">
             <thead>
